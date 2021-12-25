@@ -16,7 +16,7 @@ def predict():
     '''
     int_features = [int(D) for D in request.form.values()]
     final_features = [np.array(int_features)]
-    prediction = credit_fraud.predict(final_features)
+    prediction = model.predict(final_features)
 
     output = round(prediction[0], 2)
 
@@ -28,7 +28,7 @@ def predict_api():
     For direct API calls trought request
     '''
     data = request.get_json(force=True)
-    prediction = credit_fraud.predict([np.array(list(data.values()))])
+    prediction = model.predict([np.array(list(data.values()))])
 
     output = prediction[0]
     return jsonify(output)
