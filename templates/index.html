@@ -17,8 +17,7 @@
 	<h1>Credit card fraud detection</h1>
 
      <!-- Main Input For Receiving Query to our ML -->
-    <form action="{{ url_for('predict')}}"method="post">
-    	<input type="text" name="Time" placeholder="Enter time" required="required" />
+    <form action="{{ url_for('predict')}}"method="post"> 
         <input type="text" name="V1" placeholder="enter value of v1" required="required" />
 	<input type="text" name="V2" placeholder="enter value of v2" required="required" />
 	<input type="text" name="V3" placeholder="enter value of v3" required="required" />
@@ -47,8 +46,6 @@
         <input type="text" name="V26" placeholder="enter value of v26" required="required" />
 	<input type="text" name="V27" placeholder="enter value of v27" required="required" />
 	<input type="text" name="V28" placeholder="enter value of v28" required="required" />
-        <input type="text" name="V29" placeholder="enter value of v29" required="required" />
-	<input type="text" name="V30" placeholder="enter value of v30" required="required" />
 	<input type="text" name="Amount" placeholder="Enter Amount" required="required" />
         <button type="submit" class="btn btn-primary btn-block btn-large">Click ToStart Analysis</button>
     </form>
