@@ -65,7 +65,7 @@ Y.head()
 print("Shape of train_X: ", train_X.shape)
 print("Shape of test_X: ", test_X.shape)
 
-D =dataframe.iloc[:,:30]
+D =dataframe.iloc[:,:29]
 
 I = dataframe.iloc[:,-1]
 
