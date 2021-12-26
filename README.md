@@ -16,7 +16,7 @@ This project has four major parts :
 ```
 python main.py
 ```
-This would create a serialized version of our model into a file model.pkl
+This would create a serialized version of our model into a file credit_fraud.pkl
 
 2. Run app.py using below command to start Flask API
 ```
