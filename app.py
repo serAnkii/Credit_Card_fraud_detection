@@ -20,7 +20,7 @@ def predict():
 
     output = round(prediction[0], 2)
 
-    return render_template('index.html', prediction_text='Analysis reult is {}'.format(output))
+    return render_template('index.html', prediction_text='Analysis result is {}'.format(output))
 
 @app.route('/predict_api',methods=['POST'])
 def predict_api():
